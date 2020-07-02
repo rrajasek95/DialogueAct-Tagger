@@ -28,7 +28,7 @@ def tag_dialogues(tagger, dialogues, output_path):
             dialog_das.append(" ".join(turn_das))
 
             output = " _eos ".join(dialog_das)
-            print(output)
+            # print(output)
             tagger_output_file.write(output + "\n")
             prev_num_turns = num_turns
 
